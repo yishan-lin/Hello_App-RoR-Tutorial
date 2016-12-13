@@ -6,4 +6,8 @@ def hello
   render html:"¡Hola Manudo!!!!"
 end
 
+def bye
+  render html:"Goodbye."
+end
+
 end
