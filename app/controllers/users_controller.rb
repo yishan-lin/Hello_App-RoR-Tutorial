@@ -9,6 +9,11 @@ class UsersController < ApplicationController
 
   # GET /users/1
   # GET /users/1.json
+
+    # Edit the user show page to display the content
+    # of the user’s first micropost.
+    # Confirm by visiting /users/1 that it worked.
+
   def show
     @user = User.find(params[:id])
     @micropost = @user.microposts.first

@@ -12,16 +12,22 @@
 
 <% if @micropost %>
 <p>
-  <strong>Micropost</strong>
+  <strong>Micropost</strong><br>
   <%= @micropost.content %>
+</p>
+
+<p>
+  <strong>Micropost ID:</strong>
+  <%= @micropost.user_id %>
 </p>
 <% end %>
 
 <% if !@micropost %>
 <p>
-  <strong>No microposts added yet.</strong>
+  <strong>Didn't add any microposts yet...</strong>
 </p>
 <% end %>
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
