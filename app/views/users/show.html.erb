@@ -10,5 +10,18 @@
   <%= @user.email %>
 </p>
 
+<% if @micropost %>
+<p>
+  <strong>Micropost</strong>
+  <%= @micropost.content %>
+</p>
+<% end %>
+
+<% if !@micropost %>
+<p>
+  <strong>No microposts added yet.</strong>
+</p>
+<% end %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
